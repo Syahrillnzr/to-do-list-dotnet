@@ -135,6 +135,18 @@
     <Compile Include="Migrations\202506030426367_InitialCreate.designer.cs">
       <DependentUpon>202506030426367_InitialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202506100819425_AddStartDateToTodoItem.cs" />
+    <Compile Include="Migrations\202506100819425_AddStartDateToTodoItem.Designer.cs">
+      <DependentUpon>202506100819425_AddStartDateToTodoItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202506100820368_AddTaskDescToTodoItem.cs" />
+    <Compile Include="Migrations\202506100820368_AddTaskDescToTodoItem.Designer.cs">
+      <DependentUpon>202506100820368_AddTaskDescToTodoItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202506100822129_RenameTaskToTaskName.cs" />
+    <Compile Include="Migrations\202506100822129_RenameTaskToTaskName.Designer.cs">
+      <DependentUpon>202506100822129_RenameTaskToTaskName.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\TodoItem.cs" />
@@ -200,6 +212,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202506030426367_InitialCreate.resx">
       <DependentUpon>202506030426367_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202506100819425_AddStartDateToTodoItem.resx">
+      <DependentUpon>202506100819425_AddStartDateToTodoItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202506100820368_AddTaskDescToTodoItem.resx">
+      <DependentUpon>202506100820368_AddTaskDescToTodoItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202506100822129_RenameTaskToTaskName.resx">
+      <DependentUpon>202506100822129_RenameTaskToTaskName.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
