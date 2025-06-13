@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.ComponentModel.DataAnnotations;
+
 
 namespace To_do_list_Dotnet.Models
 {
@@ -11,7 +13,11 @@ namespace To_do_list_Dotnet.Models
         public string TaskName { get; set; }
         public string TaskDesc { get; set; }
         public bool IsDone { get; set; }
-        public DateTime DateStart { get; set; }
-        public DateTime DateEnd { get; set; }
+
+        [DataType(DataType.Date)]
+        public DateTime? DateStart { get; set; }
+
+        [DataType(DataType.Date)]
+        public DateTime? DateEnd { get; set; }
     }
 }

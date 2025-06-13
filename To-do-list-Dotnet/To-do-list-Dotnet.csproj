@@ -147,6 +147,14 @@
     <Compile Include="Migrations\202506100822129_RenameTaskToTaskName.Designer.cs">
       <DependentUpon>202506100822129_RenameTaskToTaskName.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202506130305368_MakeDatesNullable.cs" />
+    <Compile Include="Migrations\202506130305368_MakeDatesNullable.Designer.cs">
+      <DependentUpon>202506130305368_MakeDatesNullable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202506130746033_FixTaskDesc.cs" />
+    <Compile Include="Migrations\202506130746033_FixTaskDesc.Designer.cs">
+      <DependentUpon>202506130746033_FixTaskDesc.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\TodoItem.cs" />
@@ -221,6 +229,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202506100822129_RenameTaskToTaskName.resx">
       <DependentUpon>202506100822129_RenameTaskToTaskName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202506130305368_MakeDatesNullable.resx">
+      <DependentUpon>202506130305368_MakeDatesNullable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202506130746033_FixTaskDesc.resx">
+      <DependentUpon>202506130746033_FixTaskDesc.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -46,7 +46,7 @@ namespace To_do_list_Dotnet.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Task,IsDone")] TodoItem todoItem)
+        public ActionResult Create([Bind(Include = "Id,TaskName,Desc,DateStart,DateEnd,IsDone")] TodoItem todoItem)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace To_do_list_Dotnet.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Task,IsDone")] TodoItem todoItem)
+        public ActionResult Edit([Bind(Include = "Id,TaskName,Desc,DateStart,DateEnd,IsDone")] TodoItem todoItem)
         {
             if (ModelState.IsValid)
             {
