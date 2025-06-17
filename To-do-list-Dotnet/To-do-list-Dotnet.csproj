@@ -131,6 +131,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\EnumHelper.cs" />
     <Compile Include="Migrations\202506030426367_InitialCreate.cs" />
     <Compile Include="Migrations\202506030426367_InitialCreate.designer.cs">
       <DependentUpon>202506030426367_InitialCreate.cs</DependentUpon>
@@ -154,6 +155,10 @@
     <Compile Include="Migrations\202506130746033_FixTaskDesc.cs" />
     <Compile Include="Migrations\202506130746033_FixTaskDesc.Designer.cs">
       <DependentUpon>202506130746033_FixTaskDesc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202506170412187_AddTaskStatus.cs" />
+    <Compile Include="Migrations\202506170412187_AddTaskStatus.Designer.cs">
+      <DependentUpon>202506170412187_AddTaskStatus.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -235,6 +240,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202506130746033_FixTaskDesc.resx">
       <DependentUpon>202506130746033_FixTaskDesc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202506170412187_AddTaskStatus.resx">
+      <DependentUpon>202506170412187_AddTaskStatus.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -11,7 +11,7 @@
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.TaskName)
+            Task Name
         </dt>
 
         <dd>
@@ -19,7 +19,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.TaskDesc)
+            Task Description
         </dt>
 
         <dd>
@@ -27,26 +27,29 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.DateStart)
+            Date and Time Start
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.DateStart)
+            @*@Html.DisplayFor(model => model.DateStart)*@
+            @(Model.DateStart?.ToString("dd/MM/yyyy hh:mm tt"))
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.DateEnd)
+            Date and Time End
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.DateEnd)
+            @*@Html.DisplayFor(model => model.DateEnd)*@
+            @(Model.DateEnd?.ToString("dd/MM/yyyy hh:mm tt"))
         </dd>
+
         <dt>
-            @Html.DisplayNameFor(model => model.IsDone)
+            Status
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.IsDone)
+            @Html.DisplayFor(model => model.TaskStatus)
         </dd>
 
     </dl>
