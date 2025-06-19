@@ -1,13 +1,15 @@
 ﻿@model To_do_list_Dotnet.Models.TodoItem
 
+
 @{
     ViewBag.Title = "Details";
 }
 
+<br>
 <h2>Details</h2>
 
 <div>
-    <h4>TodoItem</h4>
+
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -49,12 +51,16 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.TaskStatus)
+            @To_do_list_Dotnet.Helpers.EnumHelper.GetDisplayName(Model.TaskStatus)
         </dd>
 
     </dl>
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+
+<br>
+<div class="form-group">
+    <div class="col-md-offset-2 col-md-10">
+        @Html.ActionLink("Edit", "Edit", new { id = Model.Id }, new { @class = "btn btn-secondary ms-2" })
+        @Html.ActionLink("Cancel", "Index", null, new { @class = "btn btn-secondary ms-2" })
+    </div>
+</div>

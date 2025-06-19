@@ -4,11 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To do List</title>
-    @Styles.Render("~/Content/css")
+    @*@Styles.Render("~/Content/css")*@
     @Scripts.Render("~/bundles/modernizr")
-    @*<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />*@
-
-    <link rel="stylesheet" href="~/css/brite.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="~/css/brite.css" />
 
 </head>
 <body>
@@ -23,10 +22,15 @@
                 @Html.ActionLink("Home", "Index", "Home", null, new { @class = "navbar-brand" })
                 <div class="collapse navbar-collapse" id="navbarColor01">
                     <ul class="navbar-nav me-auto">
-                        <li>@Html.ActionLink("About", "About", "Home")</li>
-                        <li>@Html.ActionLink("To-Do List", "Index", "TodoItems")</li>
+                        <li class="nav-item">
+                            @Html.ActionLink("About", "About", "Home", null, new { @class = "nav-link" })
+                        </li>
+                        <li class="nav-item">
+                            @Html.ActionLink("To-Do List", "Index", "TodoItems", null, new { @class = "nav-link" })
+                        </li>
                     </ul>
                 </div>
+
             </div>
         </nav>
     </div>
