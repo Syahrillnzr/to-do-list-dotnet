@@ -12,7 +12,7 @@
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.TaskName)
+            Task Name
         </dt>
 
         <dd>
@@ -20,7 +20,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.TaskDesc)
+            Task Description
         </dt>
 
         <dd>
@@ -28,22 +28,22 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.DateStart)
+            Date and Time Start
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.DateStart)
+            @(Model.DateStart?.ToString("dd/MM/yyyy hh:mm tt"))
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.DateEnd)
+            Date and Time End
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.DateEnd)
+            @(Model.DateEnd?.ToString("dd/MM/yyyy hh:mm tt"))
         </dd>
         <dt>
-            @Html.DisplayNameFor(model => model.TaskStatus)
+            Status
         </dt>
 
         <dd>
@@ -60,7 +60,7 @@
 
         <br>
         <div class="form-actions no-color">
-            <input type="submit" value="Delete" class="btn btn-default" /> |
+            <input type="submit" value="Delete" class="btn btn-danger" /> |
             @Html.ActionLink("Cancel", "Index", null, new { @class = "btn btn-secondary ms-2" })
         </div>
     }
